@@ -320,6 +320,14 @@ $ python manage.py runserver
 ```
 
 
+### To run in Docker :
+$ docker run -it -p 8020:8020 \
+     -e DJANGO_SUPERUSER_USERNAME=admin \
+     -e DJANGO_SUPERUSER_PASSWORD=sekret1 \
+     -e DJANGO_SUPERUSER_EMAIL=admin@example.com \
+     django-markdown-editor
+
+
 Checkout at http://127.0.0.1:8000/simple-form/ on your browser.
 
 
